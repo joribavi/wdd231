@@ -8,6 +8,10 @@
         margin: 0 auto;
     }
 
+    footer {
+        margin-top: 20px;
+    }
+
     header {
 
         grid-template-columns: 24px auto;
@@ -40,5 +44,39 @@
 
     }
 
+    .personal-info {
+        flex-direction: row;
+        gap: 10px;
+        border-bottom: 20px;
+
+    }
+
+    .about-me p,
+    .student-pic .content-box {
+        height: 80%;
+    }
+
+    .web-courses {
+        border-top: 20px;
+    }
+
+    .click-btns {
+        border-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #all,
+    #cse,
+    #wdd {
+
+
+        width: 200px;
+
+    }
+
+    .course-container button {
+        padding: 10px;
+    }
 
 }

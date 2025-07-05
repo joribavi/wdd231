@@ -108,20 +108,22 @@ header span {
 }
 
 .navigation ul li a:hover {
-    color: rgba(85, 49, 85, 0.411);
+    color: var(--primary-color);
+
 }
 
 
 
 
 .navigation li.current {
-    background-color: rgba(128, 128, 128, 0.411);
+    background-color: var(--soft-green);
 }
 
 h1 {
 
     color: var(--secondary-color);
     font-size: 1.8rem;
+    margin-bottom: 0;
 
 }
 
@@ -165,6 +167,38 @@ footer p {
     gap: 10px;
 }
 
+button {
+    border-radius: 8px;
+    border: 0.2px solid var(--secondary-color);
+
+}
+
+.web-courses .click-btns {
+    width: 100%;
+
+}
+
+#all,
+#cse,
+#wdd {
+    cursor: pointer;
+    color: white;
+    width: 100px;
+    padding: 5px;
+}
+
+#all {
+    background-color: var(--green);
+}
+
+#cse {
+    background-color: var(--primary-color);
+}
+
+#wdd {
+    background-color: var(--soft-green);
+}
+
 .course-container .completed {
 
     background-color: var(--soft-green);
@@ -179,6 +213,7 @@ footer p {
 .web-courses {
 
     width: 100%;
+    justify-content: center;
 }
 
 
@@ -213,13 +248,22 @@ footer p {
 
 
 .about-me h2,
-.student-pic h2,
+.student-pic h2 {
+    width: 100%;
+    background-color: var(--green);
+    color: white;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+
+
+
+}
+
 .web-courses h2 {
     width: 100%;
     background-color: var(--green);
     color: white;
-
-
+    font-size: 1.5rem;
 }
 
 .about-me p {
@@ -231,7 +275,7 @@ footer p {
 .student-pic {
     display: flex;
     flex-direction: column;
-    padding: 5px 0 5px 10px;
+
 
     width: 100%;
     align-items: center;
@@ -245,9 +289,10 @@ footer p {
 
     width: 200px;
     height: 180px;
-    background-color: rgba(126, 56, 126, 0.199);
+    background-color: rgba(124, 120, 124, 0.089);
     margin: 0 auto;
     padding: 10px;
+    border-radius: 7px;
 
 }
 

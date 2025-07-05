@@ -231,9 +231,11 @@ button {
 
 .student-pic img {
 
-    width: 100px;
+    width: 150px;
+    margin: 10px 15px 0;
     height: auto;
-    border-radius: 40%;
+    border-radius: 10%;
+
 
 }
 
@@ -244,7 +246,11 @@ button {
 }
 
 
+.image-wrapper {
 
+    display: flex;
+
+}
 
 
 .about-me h2,

@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/scripts.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Varela+Round&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -29,23 +35,24 @@
 
     </nav>
     <main>
-        <h1></h1>
-        <section>
-            <h2>
-
-            </h2>
+        <h1>Home</h1>
+        <section class="about-me">
+            <h2>About Me</h2>
 
         </section>
         <section>
-            <h2>
-
-            </h2>
+            <h2> Student Photo</h2>
 
         </section>
         <section>
-            <h2>
+            <h2>Web Certification Courses </h2>
+            <button id="all">ALL</button>
+            <button id="cse">CSE</button>
+            <button id="wdd">WDD</button>
 
-            </h2>
+            <div class="course-container"> </div>
+            <p>Total credits for courses listed above: <span id="credits"></span></p>
+
 
         </section>
 
@@ -60,7 +67,7 @@
                     height="50px" alt="github icon"></a>
         </div>
         <p>Copyrigth © <span id="currentyear"></span> Jonathan Villegas. Mendoza, Argentina</p>
-        <p id="lastModified"></p>
+        <p> Last Modification: <span id="lastModified"></span></p>
 
 
     </footer>

@@ -96,20 +96,31 @@ function CoursesButtons(course) {
 
     const courseContainer = document.querySelector('.course-container');
 
+    let classBtn = course.completed ? 'completed' : 'not-completed'; //ternary operator like an if statement but in one line
+
 
     const btnHTML =
         `
         <div class="course-container">
-           <button>${course.subject} ${course.number} </button>
+           <button class="${classBtn}">${course.subject} ${course.number} </button>
 
         </div>
+
         `
+
+
 
     courseContainer.innerHTML += btnHTML;
 
+
+
 };
 
+
+
 courses.forEach(CoursesButtons)
+
+
 
 // code to show all courses 
 
@@ -119,6 +130,16 @@ allCourses.addEventListener('click', () => {
     document.querySelector('.course-container').innerHTML = "";
 
     courses.forEach(CoursesButtons);
+
+    // reduce to get total of courses
+    document.getElementById('credits').innerHTML = courses.reduce(getCredits, 0);
+
+    function getCredits(mySum, course) {
+
+        return mySum + course.credits;
+
+    }
+
 
 
 });
@@ -141,14 +162,21 @@ cseCourses.addEventListener('click', () => {
 
     });
 
+
+    // reduce to get total of courses
+    document.getElementById('credits').innerHTML = courses.reduce(getCredits, 0);
+
+    function getCredits(mySum, course) {
+        if (course.subject === "CSE" && course.completed) {
+            return mySum + course.credits;
+        }
+        return mySum
+    }
+
     filteredCourses.forEach(CoursesButtons);
 });
 
 // code to show WDD Courses 
-
-
-
-// code to show CSE courses
 
 const wddCourses = document.getElementById('wdd');
 wddCourses.addEventListener('click', () => {
@@ -165,8 +193,20 @@ wddCourses.addEventListener('click', () => {
 
     });
 
+    // reduce to get total of courses
+    document.getElementById('credits').innerHTML = courses.reduce(getCredits, 0);
+
+    function getCredits(mySum, course) {
+        if (course.subject === "WDD" && course.completed) {
+            return mySum + course.credits;
+        }
+        return mySum
+    }
+
     filteredCourses.forEach(CoursesButtons);
 });
+
+
 
 
 

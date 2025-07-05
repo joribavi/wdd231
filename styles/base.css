@@ -2,19 +2,21 @@
     box-sizing: border-box;
 }
 
---primary-color {
-
-    color: rgb(46, 40, 46);
-}
-
---secondary-color {
-    color: rgb(85, 49, 85);
-
+:root {
+    --primary-color: rgb(46, 40, 46);
+    --secondary-color: rgb(85, 49, 85);
+    --green: rgb(47, 143, 119);
+    --soft-green: rgba(47, 143, 119, 0.438);
 }
 
 body {
 
     font-family: "Lexend", sans-serif;
+
+}
+
+main {
+    margin: 0 10px 0 10px;
 }
 
 /* ------ Header ----------------*/
@@ -117,7 +119,10 @@ header span {
 }
 
 h1 {
-    margin-left: 10px;
+
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+
 }
 
 
@@ -125,6 +130,10 @@ h1 {
 
 footer {
     padding: 1rem 10px;
+    background-color: var(--soft-green);
+
+    margin: 20px 10px 0 10px;
+
 }
 
 footer p {
@@ -153,4 +162,103 @@ footer p {
 
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
+}
+
+.course-container .completed {
+
+    background-color: var(--soft-green);
+}
+
+.course-container .not-completed {
+
+    background-color: var(--secondary-color);
+
+}
+
+.web-courses {
+
+    width: 100%;
+}
+
+
+
+
+/*------------Personal Information-------------------- */
+
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.student-pic img {
+
+    width: 100px;
+    height: auto;
+    border-radius: 40%;
+
+}
+
+.about-me {
+
+    width: 100%;
+
+}
+
+
+
+
+
+.about-me h2,
+.student-pic h2,
+.web-courses h2 {
+    width: 100%;
+    background-color: var(--green);
+    color: white;
+
+
+}
+
+.about-me p {
+    margin-top: 0;
+    background: rgba(126, 56, 126, 0.199);
+    padding: 5px 0 5px 10px;
+}
+
+.student-pic {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 5px 10px;
+
+    width: 100%;
+    align-items: center;
+
+
+
+}
+
+
+.student-pic #image-wrapper {
+
+    width: 200px;
+    height: 180px;
+    background-color: rgba(126, 56, 126, 0.199);
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+
+.content-box {
+
+    background: rgba(126, 56, 126, 0.199);
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+
+
 }

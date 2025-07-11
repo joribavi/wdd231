@@ -7,6 +7,10 @@
     <title>WDD231- Cuyo Region Chamber Website | Jonathan Villegas</title>
     <meta name="author" content="Jonathan Villegas">
     <meta name="description" content="Website for learning purposes for WDD231- Web Frontend Development I">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/scripts.js" defer></script>
     <link rel="icon" href="images/chamber-logo.ico">
     <!--Meta Facebook tags-->
     <meta property="og:title" content="Chamber of Commerce Cuyo Region ">
@@ -17,26 +21,31 @@
 
 <body>
     <header>
-        <nav id="nav-bar" class="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Discover</a></li>
-            </ul>
+        <img src="images/chamber-logo.png" alt="logo" width="268px" height="238px">
+        <span>Cuyo Region Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
 
 
-        </nav>
+    </nav>
+    <main>
         <section class="hero">
-            <img src="" alt="Hero Image" loading="lazy">
+            <img src="images/hero-image.jpg" alt="Hero Image" loading="lazy">
+            <button class="tickets">Keynote Tickets</button>
 
         </section>
+        <h1>Home</h1>
         <section class="events">
 
         </section>
-
-    </header>
-    <main>
 
     </main>
     <footer>
@@ -50,7 +59,7 @@
 
         </section>
         <section id="Copyrigth">
-            <p>Copyrigth © <span id="currentyear"></span> Jonathan Villegas | WDD231</p>
+            <p>Copyrigth © Cuyo Region Chamber of Commerce<span id="currentyear"></span> Jonathan Villegas | WDD231</p>
             <p> Last Modification: <span id="lastModified"></span></p>
         </section>
 

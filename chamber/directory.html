@@ -29,7 +29,7 @@
 
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Directory</a></li>
+            <li class="current"><a href="#">Directory</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
@@ -55,17 +55,34 @@
 
             </section>
             <section class="weather">
-                <h2>Current Weather</h2>
-                <img id="weather-icon">
+                <h2 class="weather-title">Current Weather</h2>
+                <div class="weather-wrapper">
+                    <img src="images/weather-icon.svg" id="weather-icon">
+                    <div class="weather-content">
+
+                        <span><strong>60°F</strong></span>
+                        <span>Sunny</span>
+                        <span>High: 65</span>
+                        <span>Low: 41</span>
+                        <span>Humidity: 41%</span>
+                        <span>Sunrise: 07:30am</span>
+                        <span>Sunset: 08:00pm</span>
+                    </div>
+                </div>
+
+
 
 
 
             </section>
             <section class="forecast">
+
                 <h2>Weather Forecast</h2>
-                <span>Today: <strong>90°F</strong> </span>
-                <span>Wednesday: <strong>89°F</strong> </span>
-                <span>Thursday: <strong>68°F°</strong></span>
+                <div class="forecast-content">
+                    <span>Today: <strong>60°F</strong> </span>
+                    <span>Wednesday: <strong>65°F</strong> </span>
+                    <span>Thursday: <strong>55°F°</strong></span>
+                </div>
 
 
 

@@ -175,6 +175,7 @@ header span {
 .wrapper h2 {
     background-color: var(--green);
     color: whitesmoke;
+    text-indent: 20px;
 
 }
 
@@ -198,11 +199,46 @@ header span {
     background-color: blanchedalmond;
 }
 
-.forecast {
+
+#weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.forecast,
+.weather {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding-bottom: 10px;
+    margin-bottom: 25px;
+
+}
+
+.weather h2,
+.forecast h2 {
+    margin-top: 0;
+}
+
+.weather-content {
+
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.weather-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.forecast-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 25px;
+
 
 }
 
@@ -212,11 +248,14 @@ header span {
 .social-media {
     display: flex;
     justify-content: center;
-    margin-top: 25px;
+    margin: 25px 24px;
     gap: 10px;
-    padding-top: 25px;
+    padding: 25px;
 }
 
 footer {
     background-color: blanchedalmond;
+    padding-bottom: 25px;
+    margin: 10px 10px;
+    text-align: center;
 }

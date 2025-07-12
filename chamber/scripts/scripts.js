@@ -24,3 +24,5 @@ navbutton.addEventListener('click', () => {
 });
 
 
+//Index Directory cards Function 
+

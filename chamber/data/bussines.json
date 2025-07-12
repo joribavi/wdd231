@@ -1,0 +1,157 @@
+
+{
+    "businesses": [
+        {
+            "name": "AgroSolutions Inc.",
+            "addresses": [
+                "Rivadavia Avenue 23, City of Mendoza, Argentina",
+                "Córdoba 35, City of San Luis, Argentina"
+            ],
+            "phone_numbers": [
+                "+543423444",
+                "+54566777"
+            ],
+            "founding_year": 2005,
+            "website_url": "https://agrosolutions.com.ar",
+            "image": "agro.png",
+            "membership_levels": {
+                "id": 3,
+                "name": "gold"
+            },
+            "is_publicly_traded": true
+        },
+        {
+            "name": "Cuyo Travel Services",
+            "addresses": [
+                "Yrigoyen Avenue 230, City of San Rafael, Mendoza, Argentina",
+                "Las Heras 390, City of Mendoza, Argentina"
+            ],
+            "phone_numbers": [
+                "+5411345",
+                "+54886767"
+            ],
+            "founding_year": 1986,
+            "website_url": "https://cuyotravelservices.com.ar",
+            "image": "cuyotravel.png",
+            "membership_levels": {
+                "id": 1,
+                "name": "member"
+            },
+            "is_publicly_traded": false
+        },
+        {
+            "name": "Olive Oil Inc.",
+            "addresses": [
+                "Copacabana 334, City of Mendoza, Argentina",
+                "Azcuenaga 35, City of Luján de Cuyo, Mendoza, Argentina"
+            ],
+            "phone_numbers": [
+                "+54123354",
+                "+54876876"
+            ],
+            "founding_year": 2000,
+            "website_url": "https://olive-inc.com.ar",
+            "image": "olive.png",
+            "membership_levels": {
+                "id": 2,
+                "name": "silver"
+            },
+            "is_publicly_traded": true
+        },
+        {
+            "name": "The Service Station Inc.",
+            "addresses": [
+                "Peru 34, City of Mendoza, Argentina",
+                "Corrientes 135, City of San Juan, Argentina"
+            ],
+            "phone_numbers": [
+                "+5411113",
+                "+54987897"
+            ],
+            "founding_year": 1995,
+            "website_url": "https://the-service-station.com.ar",
+            "image": "station.png",
+            "membership_levels": {
+                "id": 3,
+                "name": "gold"
+            },
+            "is_publicly_traded": true
+        },
+        {
+            "name": "Big Supermarket.",
+            "addresses": [
+                "Moreno 25, City of San Juan, Argentina",
+                "Alemania 84, City of Maipú, Mendoza, Argentina"
+            ],
+            "phone_numbers": [
+                "+54345855",
+                "+54324432"
+            ],
+            "founding_year": 2015,
+            "website_url": "https://bigsupermarket.com.ar",
+            "image": "agro.png",
+            "membership_levels": {
+                "id": 2,
+                "name": "silver"
+            },
+            "is_publicly_traded": true
+        },
+        {
+            "name": "Cuyo Insurances",
+            "addresses": [
+                "Patricios 200, City of Mendoza, Argentina",
+                "Valdivia 1000, City of San Luis, Argentina"
+            ],
+            "phone_numbers": [
+                "+54342345",
+                "+54353255"
+            ],
+            "founding_year": 1999,
+            "website_url": "https://cuyoinsurance.com.ar",
+            "image": "agro.png",
+            "membership_levels": {
+                "id": 3,
+                "name": "gold"
+            },
+            "is_publicly_traded": false
+        },
+        {
+            "name": "The Potatoes Producer",
+            "addresses": [
+                "Washington 390, City of La Rioja, Argentina",
+                "Estados Unidos 24, City of San Luis, Argentina"
+            ],
+            "phone_numbers": [
+                "+54434668",
+                "+5434353454"
+            ],
+            "founding_year": 2005,
+            "website_url": "https://tasty-potatoes.com.ar",
+            "image": "potatoes.png",
+            "membership_levels": {
+                "id": 1,
+                "name": "member"
+            },
+            "is_publicly_traded": false
+        },
+        {
+            "name": "Mani Software Factory.",
+            "addresses": [
+                "Italia 899, City of Mendoza, Argentina",
+                "Uruguay 350, City of San Luis, Argentina"
+            ],
+            "phone_numbers": [
+                "+543424324",
+                "+54345555"
+            ],
+            "founding_year": 2020,
+            "website_url": "https://mani-software.com.ar",
+            "image": "mani.png",
+            "membership_levels": {
+                "id": 1,
+                "name": "member"
+            },
+            "is_publicly_traded": false
+        }
+    ]
+}

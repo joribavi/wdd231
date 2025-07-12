@@ -10,6 +10,8 @@
     --hover-color: rgb(40, 33, 131);
 }
 
+
+
 body {
 
     font-family: "Lexend", sans-serif;
@@ -166,7 +168,12 @@ header span {
     color: white;
     font-weight: bold;
     border: none;
+    cursor: pointer;
 
+}
+
+.hero button:hover {
+    color: var(--hover-color);
 }
 
 

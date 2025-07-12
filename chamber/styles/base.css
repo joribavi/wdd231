@@ -3,11 +3,11 @@
 }
 
 :root {
-    --primary-color: rgb(46, 40, 46);
-    --secondary-color: rgb(85, 49, 85);
+    --primary-color: rgb(15, 43, 23);
+    --secondary-color: rgb(59, 123, 126);
     --green: rgb(41, 99, 85);
     --soft-green: rgba(47, 143, 119, 0.438);
-    --hover-color: rgb(131, 33, 131);
+    --hover-color: rgb(40, 33, 131);
 }
 
 body {
@@ -18,6 +18,10 @@ body {
 
 main {
     margin: 0 10px 0 10px;
+}
+
+li {
+    list-style-type: none;
 }
 
 /* ------ Header ----------------*/
@@ -36,12 +40,16 @@ header img {
     width: 100%;
     height: auto;
     padding-bottom: 2px;
+    height: 40px;
+
+
 
 }
 
 header span {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: var(--primary-color);
+    font-weight: bolder;
 }
 
 /* ----------Hamburguer Navigation -----------*/
@@ -55,14 +63,14 @@ header span {
 
 .hamburger::before {
     content: "\2630";
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: var(--primary-color);
 
 }
 
 .hamburger.show::before {
     content: "\00D7";
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: var(--primary-color);
 
 }
@@ -148,11 +156,55 @@ header span {
     position: absolute;
     align-self: flex-end;
     margin: 10px;
-    background-color: rgb(11, 100, 70);
+    background-color: rgb(59, 141, 114);
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 10px;
     color: white;
     font-weight: bold;
+    border: none;
+
+}
 
 
+/*-------------WRAPPER SECTION --------------------*/
+
+.wrapper h2 {
+    background-color: var(--green);
+    color: whitesmoke;
+
+}
+
+.wrapper li {
+    padding: 5px;
+    text-align: left;
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(25, 25, 59);
+}
+
+.wrapper .events ul {
+    margin: 0 0 25px 0;
+    padding-bottom: 10px;
+}
+
+.events,
+.weather,
+.forecast {
+
+    background-color: blanchedalmond;
+}
+
+
+
+/* ------FOOTER -------- */
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+footer {
+    background-color: blanchedalmond;
 }

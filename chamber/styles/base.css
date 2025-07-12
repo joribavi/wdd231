@@ -24,6 +24,10 @@ li {
     list-style-type: none;
 }
 
+h1 {
+    font-size: 1.8rem;
+}
+
 /* ------ Header ----------------*/
 
 header {
@@ -194,6 +198,13 @@ header span {
     background-color: blanchedalmond;
 }
 
+.forecast {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+
+}
 
 
 /* ------FOOTER -------- */
@@ -203,6 +214,7 @@ header span {
     justify-content: center;
     margin-top: 25px;
     gap: 10px;
+    padding-top: 25px;
 }
 
 footer {

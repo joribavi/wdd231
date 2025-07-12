@@ -13,7 +13,7 @@
             ],
             "founding_year": 2005,
             "website_url": "https://agrosolutions.com.ar",
-            "image": "agro.png",
+            "image": "agro.jpg",
             "membership_levels": {
                 "id": 3,
                 "name": "gold"
@@ -89,7 +89,7 @@
             ],
             "founding_year": 2015,
             "website_url": "https://bigsupermarket.com.ar",
-            "image": "agro.png",
+            "image": "supermarket.png",
             "membership_levels": {
                 "id": 2,
                 "name": "silver"
@@ -108,7 +108,7 @@
             ],
             "founding_year": 1999,
             "website_url": "https://cuyoinsurance.com.ar",
-            "image": "agro.png",
+            "image": "insurance.png",
             "membership_levels": {
                 "id": 3,
                 "name": "gold"

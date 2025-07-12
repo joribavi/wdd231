@@ -259,3 +259,36 @@ footer {
     margin: 10px 10px;
     text-align: center;
 }
+
+
+/* -----------------CARDS--------------------------------------------*/
+.businesses {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.directory-card {
+
+    height: 350px;
+    width: 300px;
+    border: 1px solid rgb(31, 48, 31);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.directory-card img {
+    height: 60px;
+    width: 60px;
+}
+
+.directory-card h2 {
+    border-bottom: 2px solid rgb(11, 36, 11);
+}
+
+.directory-card h2 {
+    color: rgb(14, 78, 14);
+}

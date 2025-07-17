@@ -155,3 +155,43 @@ function displayResults(data) {
 
 
 
+// GETTING FORECAST DATA FROM API 
+
+const forcastURL = `//api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
+
+async function apiForecastFetch() {
+
+    try {
+        const response = await fetch(forcastURL);
+        if (response.ok) {
+            const forecastData = await response.json();
+            console.log(forecastData); // only for testing purposes
+            displayForecastResults(forecastData);
+
+        } else {
+            throw Error(await response.text());
+        }
+
+
+    } catch (error) {
+        console.log(error);
+    }
+
+}
+
+
+
+apiForecastFetch();
+
+const todayForecast = document.querySelector('#today')
+const tomorrowForecast = document.querySelector('#tomorrow')
+const afterTomorrowForecast = document.querySelector('#after-tomorrow')
+
+// Function to display results of the API response
+
+function displayForecastResults(forecastData) {
+
+    todayForecast.innerHTML = ` Today: <strong> ${forecastData.list[0].main.temp_max}&deg;F </strong> `
+
+
+}

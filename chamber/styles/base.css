@@ -299,3 +299,10 @@ footer {
 .directory-card h2 {
     color: rgb(14, 78, 14);
 }
+
+
+/*--------WEATHER SECTIONS -------------------------*/
+
+#description {
+    text-transform: capitalize;
+}

@@ -165,7 +165,7 @@ async function apiForecastFetch() {
         const response = await fetch(forcastURL);
         if (response.ok) {
             const forecastData = await response.json();
-            console.log(forecastData); // only for testing purposes
+            // console.log(forecastData); 
             displayForecastResults(forecastData);
 
         } else {

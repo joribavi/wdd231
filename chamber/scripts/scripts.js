@@ -187,11 +187,24 @@ const todayForecast = document.querySelector('#today')
 const tomorrowForecast = document.querySelector('#tomorrow')
 const afterTomorrowForecast = document.querySelector('#after-tomorrow')
 
+
 // Function to display results of the API response
 
 function displayForecastResults(forecastData) {
 
+    //getting day Format for displaying result on html 
+    const tomorrow = new Date(forecastData.list[8].dt_txt) //javascript needs the txt string converted into Date Format
+    const tomorrowWeekday = tomorrow.toLocaleString('en-UK', { weekday: 'long' }) //getting date 
+
+    // getting day Format for displaying result on html  for the day after tomorrow
+    const afterTomorrow = new Date(forecastData.list[16].dt_txt) //same than tomorrow date
+    const afterTomorrowWeekday = afterTomorrow.toLocaleString('en-UK', { weekday: 'long' }) //getting date 
+
+
     todayForecast.innerHTML = ` Today: <strong> ${forecastData.list[0].main.temp_max}&deg;F </strong> `
+    tomorrowForecast.innerHTML = ` ${tomorrowWeekday} : <strong> ${forecastData.list[8].main.temp_max}&deg;F </strong>`
+    afterTomorrowForecast.innerHTML = `${afterTomorrowWeekday} : <strong> ${forecastData.list[16].main.temp_max}&deg;F </strong>`
 
 
 }
+

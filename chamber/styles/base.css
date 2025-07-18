@@ -96,7 +96,7 @@ header span {
 
 .navigation.show {
     display: block;
-    border-color: solid 1px var(--blue);
+    border-color: var(--blue);
     padding: 5px;
 
 

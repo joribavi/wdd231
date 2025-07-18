@@ -3,11 +3,14 @@
 }
 
 :root {
-    --primary-color: rgb(15, 43, 23);
-    --secondary-color: rgb(59, 123, 126);
-    --green: rgb(41, 99, 85);
-    --soft-green: rgba(47, 143, 119, 0.438);
-    --hover-color: rgb(40, 33, 131);
+    --blue: #2C3E50;
+    --soft-grey: #F0F5F2;
+    --green: #198A59;
+    --soft-green: #198a59dc;
+    --gold: #D4AF37;
+    --primary-color: rgb(40, 33, 131);
+
+
 }
 
 
@@ -36,7 +39,7 @@ header {
     display: grid;
     grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
-    border-bottom: solid 1px rgb(128, 128, 128);
+    border-bottom: solid 1px var(--blue);
     column-gap: 8px;
     align-items: end;
 }
@@ -70,14 +73,14 @@ header span {
 .hamburger::before {
     content: "\2630";
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--blue);
 
 }
 
 .hamburger.show::before {
     content: "\00D7";
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--blue);
 
 }
 
@@ -92,7 +95,7 @@ header span {
 
 .navigation.show {
     display: block;
-    border-color: solid 1px var(--secondary-color);
+    border-color: solid 1px var(--blue);
     padding: 5px;
 
 
@@ -113,7 +116,7 @@ header span {
 
 .navigation ul a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     display: block;
     padding: 0.8rem 10px;
     border-bottom: solid 1px rgba(128, 128, 128, 0.719);
@@ -124,7 +127,7 @@ header span {
 }
 
 .navigation ul li a:hover {
-    color: var(--hover-color);
+    color: var(--green);
 
 }
 
@@ -162,10 +165,10 @@ header span {
     position: absolute;
     align-self: flex-end;
     margin: 10px;
-    background-color: rgb(59, 141, 114);
+    background-color: var(--green);
     padding: 10px;
     border-radius: 10px;
-    color: white;
+    color: var(--soft-grey);
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -181,7 +184,7 @@ header span {
 
 .wrapper h2 {
     background-color: var(--green);
-    color: whitesmoke;
+    color: var(--soft-grey);
     text-indent: 20px;
 
 }
@@ -191,7 +194,8 @@ header span {
     text-align: left;
     font-size: larger;
     font-weight: bold;
-    color: rgb(25, 25, 59);
+    color: var(--primary-color);
+    line-height: 25px;
 }
 
 .wrapper .events ul {
@@ -203,7 +207,7 @@ header span {
 .weather,
 .forecast {
 
-    background-color: blanchedalmond;
+    background-color: var(--soft-grey);
 }
 
 
@@ -219,6 +223,7 @@ header span {
     gap: 10px;
     padding-bottom: 10px;
     margin-bottom: 25px;
+    line-height: 25px;
 
 }
 
@@ -261,12 +266,15 @@ header span {
 }
 
 footer {
-    background-color: blanchedalmond;
+    background-color: var(--soft-grey);
     padding-bottom: 25px;
     margin: 10px 10px;
     text-align: center;
 }
 
+footer h3 {
+    color: var(--primary-color);
+}
 
 /* -----------------CARDS--------------------------------------------*/
 .businesses {
@@ -281,15 +289,19 @@ footer {
 
     height: 350px;
     width: 300px;
-    border: 1px solid rgb(31, 48, 31);
-    border-radius: 10px;
+    border: 1px solid var(--blue);
+    border-radius: 15px;
     padding: 10px;
+    background: linear-gradient(45deg, #198A59 0%, #21B36C 70%, #A5D6A7 100%);
+    text-align: center;
+
 
 }
 
 .directory-card img {
     height: 60px;
     width: 60px;
+    border-radius: 10px;
 }
 
 .directory-card h2 {
@@ -297,13 +309,13 @@ footer {
 }
 
 .directory-card h2 {
-    color: rgb(14, 78, 14);
+    color: var(--soft-grey);
 }
 
 .membership-level {
     font-weight: bold;
     font-size: large;
-    background-color: aliceblue;
+    background-color: var(--soft-grey);
     text-transform: capitalize;
 }
 

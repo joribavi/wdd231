@@ -40,8 +40,8 @@ const displayCards = (businesses) => {
         membershipLevel.classList.add('membership-level'); //adding class to style membership level Tag
 
         name.textContent = `${business.name} `;
-        addresses.textContent = `Addresses: ${business.addresses}`;
-        webSiteUrl.textContent = `Website: ${business.website_url}`;
+        addresses.innerHTML = `<strong>Addresses:</strong> ${business.addresses}`;
+        webSiteUrl.innerHTML = `<strong>Website:</strong> ${business.website_url}`;
         membershipLevel.textContent = `${business.membership_levels.name}`;
 
         image.setAttribute('src', `images/${business.image}`);

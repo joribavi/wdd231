@@ -27,8 +27,7 @@
     .navigation {
         display: block;
         border-bottom: 0.2px solid rgba(29, 58, 37, 0.719);
-        background-color: antiquewhite;
-
+        background-color: var(--soft-grey);
     }
 
     .navigation ul {
@@ -49,6 +48,10 @@
 
     .hero img {
         object-fit: cover;
+    }
+
+    header span {
+        font-size: 2rem;
     }
 
     /*----------DIRECTORY---------*/

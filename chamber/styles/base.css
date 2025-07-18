@@ -300,6 +300,12 @@ footer {
     color: rgb(14, 78, 14);
 }
 
+.membership-level {
+    font-weight: bold;
+    font-size: large;
+    background-color: aliceblue;
+    text-transform: capitalize;
+}
 
 /*--------WEATHER SECTIONS -------------------------*/
 

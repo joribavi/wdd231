@@ -88,11 +88,11 @@ function displayResults(data) {
     const sunRiseTimeStamp = new Date(data.sys.sunrise * 1000);
     const sunSetTimeStamp = new Date(data.sys.sunset * 1000);
 
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`
+    currentTemp.innerHTML = `<strong> ${data.main.temp}&deg;F </strong>`
     const iconURL = ` https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     weatherIcon.setAttribute('SRC', iconURL)
     weatherIcon.setAttribute('ALT', "Weather Icon")
-    description.innerHTML = data.weather[0].description
+    description.innerHTML = `<strong> ${data.weather[0].description} <strong>`
     lowTemp.innerHTML = `Low: ${data.main.temp_min}&deg;F`
     highTemp.innerHTML = `High: ${data.main.temp_max}&deg;F`
     humidity.innerHTML = `Humidity: ${data.main.humidity}%`

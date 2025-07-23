@@ -254,7 +254,7 @@ openCSE111Btn.addEventListener("click", () => {
     cse111Modal.showModal();
 });
 
-closeCSE110Btn.addEventListener("click", () => {
+closeCSE111Btn.addEventListener("click", () => {
     cse111Modal.close();
 });
 

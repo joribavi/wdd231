@@ -326,3 +326,9 @@ button {
 
 
 }
+
+
+dialog {
+    max-width: 500px;
+
+}

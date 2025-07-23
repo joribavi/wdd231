@@ -102,12 +102,17 @@ function CoursesButtons(course) {
     const btnHTML =
         `
         <div class="course-container">
-           <button class="${classBtn}">${course.subject} ${course.number} </button>
+           <button class="${classBtn}" id="${course.subject.toLowerCase()}${course.number}">${course.subject} ${course.number} </button>
+            <dialog id="${course.subject.toLowerCase()}${course.number}course-details">
+               <h2>${course.subject}${course.number}</h2>
+               <p>${course.description}</p>
+               <p>Technology: ${course.technology}</p>
+                <button class="${course.subject.toLowerCase()}${course.number}close-button">❌</button>
 
+            </dialog >
         </div>
 
         `
-
 
 
     courseContainer.innerHTML += btnHTML;
@@ -209,7 +214,91 @@ wddCourses.addEventListener('click', () => {
 
 
 
+// Modal Dialog for CSE110 
+
+const cseModal = document.getElementById('cse110course-details')
+const openCSE110Btn = document.querySelector('#cse110')
+const closeCSE110Btn = document.querySelector('.cse110close-button')
+
+openCSE110Btn.addEventListener("click", () => {
+    cseModal.showModal();
+});
+
+closeCSE110Btn.addEventListener("click", () => {
+    cseModal.close();
+});
 
 
+// Modal Dialog for WDD130
+
+const wddModal = document.getElementById('wdd130course-details')
+const openWDD130Btn = document.querySelector('#wdd130')
+const closeWDD130Btn = document.querySelector('.wdd130close-button')
+
+openWDD130Btn.addEventListener("click", () => {
+    wddModal.showModal();
+});
+
+closeWDD130Btn.addEventListener("click", () => {
+    wddModal.close();
+});
 
 
+// Modal Dialog for CSE111
+
+const cse111Modal = document.getElementById('cse111course-details')
+const openCSE111Btn = document.querySelector('#cse111')
+const closeCSE111Btn = document.querySelector('.cse111close-button')
+
+openCSE111Btn.addEventListener("click", () => {
+    cse111Modal.showModal();
+});
+
+closeCSE110Btn.addEventListener("click", () => {
+    cse111Modal.close();
+});
+
+// Modal Dialog CSE210
+
+const cse210Modal = document.getElementById('cse210course-details')
+const openCSE210Btn = document.querySelector('#cse210')
+const closeCSE210Btn = document.querySelector('.cse210close-button')
+
+openCSE210Btn.addEventListener("click", () => {
+    cse210Modal.showModal();
+});
+
+closeCSE210Btn.addEventListener("click", () => {
+    cse210Modal.close();
+});
+
+// Modal Dialog WDD131
+
+
+const wdd131Modal = document.getElementById('wdd131course-details')
+const openWDD131Btn = document.querySelector('#wdd131')
+const closeWDD131Btn = document.querySelector('.wdd131close-button')
+
+openWDD131Btn.addEventListener("click", () => {
+    wdd131Modal.showModal();
+});
+
+closeWDD131Btn.addEventListener("click", () => {
+    wdd131Modal.close();
+});
+
+
+// Modal Dialog for WDD231 
+
+
+const wdd231Modal = document.getElementById('wdd231course-details')
+const openWDD231Btn = document.querySelector('#wdd231')
+const closeWDD231Btn = document.querySelector('.wdd231close-button')
+
+openWDD231Btn.addEventListener("click", () => {
+    wdd231Modal.showModal();
+});
+
+closeWDD231Btn.addEventListener("click", () => {
+    wdd231Modal.close();
+});

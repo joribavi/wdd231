@@ -258,8 +258,8 @@ header span {
 
 
 /*------EVENTS -----------------*/
-.events ul p {
-    margin-left: 10px;
+.events ul li p {
+    color: rgba(0, 0, 0, 0.637);
 }
 
 

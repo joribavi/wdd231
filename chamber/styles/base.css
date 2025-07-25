@@ -257,6 +257,12 @@ header span {
 }
 
 
+/*------EVENTS -----------------*/
+.events ul p {
+    margin-left: 10px;
+}
+
+
 /* ------FOOTER -------- */
 
 .social-media {
@@ -325,4 +331,78 @@ footer h3 {
 
 #description {
     text-transform: capitalize;
+}
+
+/* ----------------GRID- LIST - MENU- SECTION  ----------------*/
+
+
+.menu {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: var(--green);
+    text-align: center;
+
+    button {
+        padding: 0.5rem 1rem;
+        font-weight: 700;
+        border-radius: 8px;
+        width: 100px;
+        background-color: var(--blue);
+        color: white;
+        font-size: bold;
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+
+    .businesses {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+        line-height: 15px;
+
+
+        .directory-card {
+            max-height: 130px;
+            width: 420px;
+            display: flex;
+            flex-direction: row;
+            border-radius: 0;
+            padding: 5px;
+
+        }
+
+        .directory-card h2 {
+            border-bottom: none;
+            color: black;
+
+        }
+
+
+        &>* {
+            margin: 0 1rem;
+        }
+
+        img {
+            display: none;
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+
+        }
+
+
+        &:nth-child(even) {
+            background-color: #bbb;
+        }
+    }
 }

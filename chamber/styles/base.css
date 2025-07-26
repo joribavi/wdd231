@@ -583,6 +583,31 @@ input[value="Gold Membership"] {
 }
 
 
+
+
+/*---CARDS ANIMATION -----*/
+
+@keyframes cards-display {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.membership-card {
+    animation: cards-display 1s ease forwards;
+    opacity: 0;
+    /* it will load with no visibility */
+
+}
+
+
 /*-----MODAL DIALOG ----------------------*/
 
 

@@ -61,7 +61,11 @@
         justify-content: center;
     }
 
+    /*---------FORM----------------- */
 
+    form {
+        padding: 2rem 5rem;
 
+    }
 
 }

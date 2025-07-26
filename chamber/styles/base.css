@@ -406,3 +406,119 @@ footer h3 {
         }
     }
 }
+
+/* ------ FORM STYLING -----------------*/
+
+
+
+form {
+    border: 0.5px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 8px;
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+    label {
+        display: block;
+        font-size: 1rem;
+        color: var(--blue);
+        padding-top: 0.2rem;
+
+
+
+    }
+
+    h3 {
+        font-size: .9rem;
+        color: #E07A5F;
+        margin: 1.5rem 0 .2rem 0;
+        border-bottom: 1px solid #eee;
+
+    }
+
+    input[type=text],
+    input[type=tel],
+    input[type=date],
+    input[type=email],
+    select {
+        display: block;
+        margin: .1rem 0 1rem 0;
+        padding: .5rem;
+        border: 1px solid #999;
+        border-radius: 7px;
+        border-left-width: 5px;
+        border-left-color: var(--soft-green);
+        font-size: 1rem;
+        color: var(--blue);
+        width: 300px;
+    }
+
+    input:required {
+        border-right-color: var(--soft-green);
+    }
+
+    input:focus {
+        border-right-color: var(--blue);
+        outline: none;
+    }
+
+    input:required:valid {
+        border-right-color: var(--green);
+    }
+
+    input[type=submit] {
+        border: none;
+        text-align: center;
+        background-color: var(--green);
+        color: white;
+        width: 180px;
+        border-radius: 15px;
+        padding: 0.8rem 1rem;
+        margin: 2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: var(--blue);
+}
+
+input[type=submit]:hover {
+    color: var(--hover-color);
+}
+
+
+
+#results {
+    background-color: var(--gold);
+    padding: 0 1rem;
+    border: 1px solid #E07A5F;
+    border-radius: 8px;
+}
+
+.form-title {
+    text-align: center;
+}
+
+form h3 {
+    color: var(--primary-color);
+}
+
+input[value="Business/Organization's description"] {
+    min-height: 50px;
+
+}
+
+input[value="Gold Membership"] {
+    margin-bottom: 1.2rem;
+}
+
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -39,6 +39,11 @@ h2 {
     color: var(--blue);
 }
 
+h3 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
 /* ------ Header ----------------*/
 
 header {
@@ -498,9 +503,9 @@ input[type=submit]:hover {
 
 
 #results {
-    background-color: var(--gold);
+    background-color: var(--soft-gray);
     padding: 0 1rem;
-    border: 1px solid #E07A5F;
+    border: 1px solid var(--blue);
     border-radius: 8px;
 }
 
@@ -526,4 +531,52 @@ input[value="Gold Membership"] {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+/* ---------------MEMBERSHIP CARDS ------------------------------------*/
+
+.membership-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+.membership-card {
+    border: solid var(--primary-color);
+    padding: 2rem;
+    width: 100px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+
+
+
+}
+
+#np {
+
+    color: white;
+    background-color: var(--blue);
+    font-size: bold;
+
+}
+
+#bronze {
+    color: white;
+    background-color: #CD7F32;
+}
+
+#silver {
+    color: white;
+    background-color: #C0C0C0;
+}
+
+#gold {
+    color: white;
+    background-color: var(--gold);
 }

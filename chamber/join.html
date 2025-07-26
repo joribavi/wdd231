@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/scripts.js" defer></script>
     <script src="scripts/cards.js" defer></script>
+    <script src="scripts/form.js" defer></script>
     <link rel="icon" href="images/chamber-logo.ico">
     <!--Meta Facebook tags-->
     <meta property="og:title" content="Chamber of Commerce Cuyo Region Landing Page ">
@@ -40,7 +41,7 @@
     <main>
         <div class="form-wrapper">
             <h1>Join Us!</h1>
-            <form method="GET" action="thankyou.html" class="designOne">
+            <form method="GET" action="thankyou.html">
                 <label>First Name <input type="text" name="first" required autocomplete="given-name"
                         title="Your First Name"></label>
                 <label>Last Name <input type="text" name="last" required autocomplete="family-name"
@@ -52,7 +53,7 @@
                         autocomplete="email"></label>
                 <label>Mobile Phone Number <input type="tel" name="phone" autocomplete="tel"
                         title="A Phone Number with dashes" placeholder="987-555-1234"></label>
-                <label> Business/Organization's Name <input type="text" name="Organization's Name" required
+                <label> Business/Organization's Name <input type="text" name="Organization" required
                         autocomplete="organization" title="Your organization"></label>
 
                 <h3>Select Your Membership Level</h3>
@@ -61,8 +62,8 @@
                 <label><input type="radio" name="Membership_level" value="Silver Membership"> Silver Membership</label>
                 <label><input type="radio" name="Membership_level" value="Gold Membership"> Gold Membership</label>
 
-                <label>Business/Organization's Description<input type="text" value="Business/Organization's description"
-                        title="Organization Description"></label>
+                <label>Business/Organization's Description<input type="text" name="Business description"
+                        value="Business description" title="Organization Description"></label>
 
 
 
@@ -70,11 +71,26 @@
                 <input type="submit" value="Join">
             </form>
         </div>
+        <h3>Membership Levels</h3>
+        <section class="membership-cards">
+            <div class="membership-card" id="np">
+                <span>NP</span>
 
+            </div>
+            <div class="membership-card" id="bronze">
+                <span>Bronze</span>
 
+            </div>
+            <div class="membership-card" id="silver">
+                <span>Silver</span>
 
+            </div>
+            <div class="membership-card" id="gold">
+                <span>Gold</span>
 
+            </div>
 
+        </section>
     </main>
     <footer>
         <section class="info">

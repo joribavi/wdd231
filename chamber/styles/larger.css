@@ -74,3 +74,16 @@
         gap: 50px;
     }
 }
+
+
+/*-----MODAL DIALOG ----------------------*/
+
+
+#np-membership-modal,
+#bronze-membership-modal,
+#silver-membership-modal,
+#gold-membership-modal {
+    max-width: 500px;
+    border-radius: 8px;
+
+}

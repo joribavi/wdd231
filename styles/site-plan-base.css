@@ -1,0 +1,41 @@
+/*-------GENERAL STYLES ------*/
+
+:root {
+    --violet-color: #8338ec;
+    --pink-color: #ff006e;
+    --blue-color: #3a86ff;
+    --soft-blue-color: #3a85ff0e;
+
+}
+
+body {
+    font-family: "Arvo", serif;
+
+}
+
+header {
+    font-family: "Bricolage Grotesque", sans-serif;
+    background-color: #ff006f0a;
+    padding: 10px 0;
+    margin-bottom: 0;
+
+}
+
+h1 {
+    color: var(--blue-color);
+    text-align: center;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+h2 {
+    color: var(--violet-color);
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+/*-- CONTENT SECTION ---*/
+
+.site-content {
+
+    background-color: var(--soft-blue-color);
+    padding: 10px 0;
+}

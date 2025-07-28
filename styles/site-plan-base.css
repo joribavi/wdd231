@@ -39,3 +39,40 @@ h2 {
     background-color: var(--soft-blue-color);
     padding: 10px 0;
 }
+
+.image-content-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-content-section img {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+}
+
+footer {
+    background-color: #ff006f0a;
+    padding: 20px;
+    font-size: bold;
+    text-align: center;
+
+}
+
+
+/*---------------DESKTOP ----------------------------------*/
+
+@media only screen and (min-width: 38rem) {
+    .image-content-section {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    .image-content-section img {
+        width: 40%;
+
+    }
+
+}

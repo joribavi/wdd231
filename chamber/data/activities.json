@@ -1,0 +1,54 @@
+
+{
+    "activities": [
+        {
+            "name": "Restaurant Association",
+            "address": "45th Valdivia Street, San Juan",
+            "description": "We help restaurants in the region grow and meet the highest industry standards",
+            "image": "cuisine.webp"
+        },
+        {
+            "name": "Olive Oil Producers' Cooperative",
+            "address": "1025th Pueyrredon, La Rioja",
+            "description": "Exporting the finest olive oil for over 30 years",
+            "image": "olive-oil.webp"
+        },
+        {
+            "name": "Cuyo Retail Association",
+            "address": "54th Chachingo, Mendoza ",
+            "description": "Fostering Retail growth for over 20 years",
+            "image": "retail.webp"
+        },
+        {
+            "name": "Software Academy",
+            "address": "105th Washington, San Luis",
+            "description": "Training software engineers to master the latest industry standards",
+            "image": "software-factory.webp"
+        },
+        {
+            "name": "Cuyo Clothing",
+            "address": "41st Macaraibo, Mendoza",
+            "description": "Helping textile business owners achieve ISO certification",
+            "image": "textile-industry.webp"
+        },
+        {
+            "name": "Travel Agents Association",
+            "address": "67th Bungalow st, Mendoza",
+            "description": "Supporting travel agents at every stage of growth. Financing small entrepreneurs",
+            "image": "tourism.webp"
+        },
+        {
+            "name": "Winegrowing and Winemaking Institute",
+            "address": "We make history by bringing the world's finest products to market",
+            "description": "20th Rivadavia, San Luis",
+            "image": "wine-makers.webp"
+        },
+        {
+            "name": "Oil Regulatory Agency",
+            "address": "100th Atencio Avenue, La Rioja",
+            "description": "We ensure all producers meet the highest quality standards",
+            "image": "oil-industry.webp"
+        }
+    ]
+}
+

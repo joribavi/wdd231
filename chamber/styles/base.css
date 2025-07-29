@@ -643,10 +643,17 @@ input[value="Gold Membership"] {
         "description"
         "button";
     background-color: var(--soft-gray);
+    border: solid 1px var(--blue);
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
 }
 
 .activity-card h2 {
     grid-area: title;
+
 
 }
 
@@ -657,6 +664,7 @@ input[value="Gold Membership"] {
 
 .activity-card figure img {
     width: 300px;
+    border-radius: 5px;
 }
 
 .activity-card p {
@@ -665,4 +673,11 @@ input[value="Gold Membership"] {
 
 .activity-card button {
     grid-area: button;
+    width: 200px;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: var(--soft-green);
+    font-weight: bold;
+
 }

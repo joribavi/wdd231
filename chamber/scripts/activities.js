@@ -65,3 +65,29 @@ const displayActivityCards = (activities) => {
 }
 
 
+//LOCAL STORAGE
+
+
+/* function for local storage  */
+let firstMessage = document.querySelector('local-storage')
+
+let visits = 'visitsNumber';
+
+if (localStorage.getItem(visits) === null) {
+    // if there are no page visits set to 0
+    localStorage.setItem(visits, '0');
+}
+
+// Recover current visits number
+let visitsNumber = parseInt(localStorage.getItem(visits));
+
+// Adding counter after visits
+visitsNumber++;
+
+// Storing Visits Number
+localStorage.setItem(visits, visitsNumber.toString());
+
+if ((visits) === 1) {
+    firstMessage.textContent = `<strong>Welcome! Let us know if you have any questions</strong>`
+}
+console.log(`Number of Visits: ${visitsNumber}`);

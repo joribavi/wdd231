@@ -630,3 +630,39 @@ input[value="Gold Membership"] {
     top: 10px;
     right: 10px;
 }
+
+
+/*---------DISCOVERY PAGE  --------------------------------*/
+
+
+.activity-card {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "photograph"
+        "description"
+        "button";
+    background-color: var(--soft-gray);
+}
+
+.activity-card h2 {
+    grid-area: title;
+
+}
+
+.activity-card figure {
+    grid-area: photograph;
+
+}
+
+.activity-card figure img {
+    width: 300px;
+}
+
+.activity-card p {
+    grid-area: description;
+}
+
+.activity-card button {
+    grid-area: button;
+}

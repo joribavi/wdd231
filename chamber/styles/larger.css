@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 64rem) {
 
 
     /*------- MENU AND HEADER ------------- */
@@ -86,4 +86,13 @@
     max-width: 500px;
     border-radius: 8px;
 
+}
+
+
+/* --- DISCOVERY PAGE -------*/
+
+.activity-cards-wrapper {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

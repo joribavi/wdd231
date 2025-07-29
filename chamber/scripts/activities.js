@@ -1,5 +1,6 @@
 //Activity cards Function 
 const economicActivities = 'data/activities.json';
+const activityCards = document.querySelector('.activity-cards-wrapper');
 
 
 
@@ -17,35 +18,50 @@ async function getActivityData() {
 
 getActivityData()
 
-const displayActivityCards = (activity) => {
+const displayActivityCards = (activities) => {
 
-    const activityCards = document.querySelector('.activity-cards-wrapper');
-    //const activityCardContainer = document.createElement('div')
-    //activityCardContainer.classList.add('activity-card')
-    //  activityCards.appendChild(activityCardContainer)
+    activities.forEach(activity => {
 
-    const activityCardsHTML = ` 
-      
-     <div class="activity-card">
-         <h2> ${activity.name}</h2>
-         <figure>
-             <img src="${activity.image}">
-         </figure>
-         <p>${activity.description}</p>
-         <button>Learn More</button>
+        //creating elements for each card
+        const activityCardsHTML = document.createElement('div')
+        activityCardsHTML.classList.add('activity-card')
+        const activityCardTitle = document.createElement('h2')
+        const cardFigure = document.createElement('figure')
+        const cardImg = document.createElement('img')
+        const cardParagraph = document.createElement('p')
+        const cardButton = document.createElement('button')
+
+        //adding content to cards
+
+        activityCardTitle.textContent = `${activity.name}`
+        cardImg.setAttribute('src', `images/${activity.image}`)
+        cardParagraph.textContent = `${activity.description}`
+        cardButton.textContent = `Learn More`
+
+        //appending elements to its parent elements
+
+        activityCardsHTML.appendChild(activityCardTitle)
+        activityCardsHTML.appendChild(cardFigure)
+        cardFigure.appendChild(cardImg) //appending img to figure , not directly to card
+        activityCardsHTML.appendChild(cardParagraph)
+        activityCardsHTML.appendChild(cardButton)
+
+        //appending cards to the html element before creation of the function
+
+        activityCards.appendChild(activityCardsHTML)
 
 
-     </div>
-    
-    
-    `
+
+
+    }); {
+
+    }
 
 
 
-    activityCards.appendChild(activityCardsHTML);
+
 
 
 }
 
-activity.forEach(displayActivityCards)
 

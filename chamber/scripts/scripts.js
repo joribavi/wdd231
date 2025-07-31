@@ -160,3 +160,48 @@ function displayForecastResults(forecastData) {
 
 }
 
+
+
+
+
+//LOCAL STORAGE
+
+
+/* function for local storage  */
+let firstMessage = document.querySelector('.local-storage')
+
+let visits = 'visitsNumber';
+
+if (localStorage.getItem(visits) === null) {
+    // if there are no page visits set to 0
+    localStorage.setItem(visits, '0');
+}
+
+// Recover current visits number
+let visitsNumber = parseInt(localStorage.getItem(visits));
+
+// Adding counter after visits
+visitsNumber++;
+
+// Storing Visits Number
+localStorage.setItem(visits, visitsNumber.toString());
+const todayDate = Date.now();
+const newDate = new Date(todayDate + 24 * 60 * 60 * 1000);
+
+function getVisits() {
+    if ((visits) === 1) {
+        firstMessage.textContent = `<strong>Welcome! Let us know if you have any questions</strong>`
+    }
+
+    else if ((visits) > 1 && todayDate > newDate) {
+        firstMessage.textContent = `<strong>Back so soon! Awesome!</strong>`
+    }
+
+    else if ((visits) > 1 && todayDate < newDate) {
+        firstMessage.textContent = `<strong>You last visited  ${newDate} days ago</strong>`
+    }
+
+
+}
+
+getVisits()

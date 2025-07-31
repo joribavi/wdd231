@@ -667,6 +667,7 @@ input[value="Gold Membership"] {
     border-radius: 5px;
 }
 
+
 .activity-card p {
     grid-area: description;
 }

@@ -73,26 +73,34 @@
         justify-content: center;
         gap: 50px;
     }
-}
 
 
-/*-----MODAL DIALOG ----------------------*/
+
+    /*-----MODAL DIALOG ----------------------*/
 
 
-#np-membership-modal,
-#bronze-membership-modal,
-#silver-membership-modal,
-#gold-membership-modal {
-    max-width: 500px;
-    border-radius: 8px;
+    #np-membership-modal,
+    #bronze-membership-modal,
+    #silver-membership-modal,
+    #gold-membership-modal {
+        max-width: 500px;
+        border-radius: 8px;
 
-}
+    }
 
 
-/* --- DISCOVERY PAGE -------*/
+    /* --- DISCOVERY PAGE -------*/
 
-.activity-cards-wrapper {
+    .activity-cards-wrapper {
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .activity-card figure img:hover {
+
+        transform: scale(1.05);
+
+    }
+
 }

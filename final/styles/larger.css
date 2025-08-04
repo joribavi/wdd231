@@ -1,0 +1,33 @@
+  @media only screen and (min-width: 38rem) {
+      .navigation ul {
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+
+
+
+
+      }
+
+      header {
+
+          grid-template-columns: 150px auto 150px;
+      }
+
+      .hamburger {
+          display: none;
+      }
+
+      .navigation {
+          display: block;
+          border-bottom: 1px solid rgba(128, 128, 128, 0.719);
+
+      }
+
+      .navigation ul li a {
+          border: none;
+
+      }
+
+  }

@@ -232,6 +232,27 @@ h3 {
 }
 
 
+/*-------COMPANY INFORMATION SECTION ------------*/
+.company-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    overflow: scroll;
+
+
+}
+
+.company-box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 var(--soft-blue-color);
+    background-color: rgba(255, 192, 203, 0.082);
+
+    padding: 5px;
+    min-width: 300px;
+    min-width: 200px;
+}
+
+
 /*------- FOOTER ----------------*/
 
 footer {

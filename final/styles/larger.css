@@ -23,11 +23,56 @@
           display: block;
           border-bottom: 1px solid rgba(128, 128, 128, 0.719);
 
+
       }
 
       .navigation ul li a {
           border: none;
 
       }
+
+
+      /*----SLIDE  ----- */
+      .slideshow-container {
+          max-width: 97%;
+
+
+
+
+      }
+
+      .text {
+          padding: 20px;
+          font-size: larger;
+
+
+      }
+
+      /*-----COMPANY INFO BOXES  -----*/
+
+      .company-info {
+          flex-direction: row;
+          margin-top: 20px;
+
+      }
+
+      .company-box {
+
+          margin: 0 auto;
+          padding: 20px;
+          cursor: pointer;
+
+      }
+
+      .company-box:hover {
+          transform: scale(1.08);
+
+
+
+      }
+
+
+
+
 
   }

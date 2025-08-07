@@ -1,0 +1,130 @@
+{
+    "products": [
+        {
+            "category": "back to school",
+            "name": "Pants",
+            "image": "pants.webp",
+            "sizes": "6-15",
+            "slug": "1",
+            "type": "jeans",
+            "there_is_stock": true
+        },
+        {
+            "category": "back to school",
+            "name": "Shorts",
+            "image": "shorts.webp",
+            "sizes": "6-15",
+            "slug": "2",
+            "type": "cargo",
+            "there_is_stock": true
+        },
+        {
+            "category": "Winter Collection",
+            "name": "Jumper",
+            "image": "jumper.webp",
+            "sizes": "0-5",
+            "slug": "3",
+            "type": "jumper",
+            "there_is_stock": true
+        },
+        {
+            "category": "Summer Collection",
+            "name": "Dress",
+            "image": "dress.webp",
+            "sizes": "8-15",
+            "slug": "4",
+            "type": "dress",
+            "there_is_stock": true
+        },
+        {
+            "category": "Newborn Essentials",
+            "name": "Organic Cotton Bodysuit",
+            "image": "bodysuit.webp",
+            "sizes": "0-3",
+            "slug": "5",
+            "type": "onesie",
+            "there_is_stock": true
+        },
+        {
+            "category": "Winter Collection",
+            "name": "Puffer Jacket",
+            "image": "puffer_jacket.webp",
+            "sizes": "4-10",
+            "slug": "6",
+            "type": "jacket",
+            "there_is_stock": true
+        },
+        {
+            "category": "Back to School",
+            "name": "Dinosaur Backpack",
+            "image": "backpack.webp",
+            "sizes": "One Size",
+            "slug": "7",
+            "type": "accessory",
+            "there_is_stock": false
+        },
+        {
+            "category": "Footwear",
+            "name": "Glow-in-the-Dark Sneakers",
+            "image": "sneakers.webp",
+            "sizes": "20-25 (EU)",
+            "slug": "8",
+            "type": "shoes",
+            "there_is_stock": true
+        },
+        {
+            "category": "Summer Collection",
+            "name": "Shark Swim Trunks",
+            "image": "swim_trunks.webp",
+            "sizes": "2-6",
+            "slug": "9",
+            "type": "swimwear",
+            "there_is_stock": true
+        },
+        {
+            "category": "Newborn Essentials",
+            "name": "Striped Romper",
+            "image": "romper.webp",
+            "sizes": "3-6",
+            "slug": "10",
+            "type": "romper",
+            "there_is_stock": true
+        },
+        {
+            "category": "Rainy Season",
+            "name": "Yellow Raincoat",
+            "image": "raincoat.webp",
+            "sizes": "3-8",
+            "slug": "11",
+            "type": "outerwear",
+            "there_is_stock": true
+        },
+        {
+            "category": "Back to School",
+            "name": "Blue Polo Shirt",
+            "image": "polo.webp",
+            "sizes": "6-12",
+            "slug": "12",
+            "type": "shirt",
+            "there_is_stock": true
+        },
+        {
+            "category": "Winter Collection",
+            "name": "Knit Beanie",
+            "image": "beanie.webp",
+            "sizes": "3",
+            "slug": "13",
+            "type": "accessory",
+            "there_is_stock": true
+        },
+        {
+            "category": "Casual Wear",
+            "name": "Unicorn Leggings",
+            "image": "leggings.webp",
+            "sizes": "2-5",
+            "slug": "14",
+            "type": "leggings",
+            "there_is_stock": false
+        }
+    ]
+}

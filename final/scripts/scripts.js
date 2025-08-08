@@ -92,42 +92,49 @@ closeBox3Btn.addEventListener("click", () => {
 import { shopProducts } from './products.mjs';
 
 const productCards = document.querySelector('.cards-wrapper');
-async function getProductData() {
-    const response = await fetch(shopProducts)
-    const data = await response.json();
-    displayProductCards(data.products)
 
-}
+try {
+    async function getProductData() {
+        const response = await fetch(shopProducts)
+        const data = await response.json();
+        displayProductCards(data.products)
 
-getProductData()
+    }
 
-const displayProductCards = (products) => {
-
-    products.forEach(product => {
-        //creating card elements 
-        const productCardsHTML = document.createElement('div')
-        productCardsHTML.classList.add('product-card')
-        const productCardTitle = document.createElement('h3')
-        const productImg = document.createElement('img')
-        const productCardButton = document.createElement('button')
-
-        //adding content to the cards 
+    getProductData()
 
 
-        productCardTitle.textContent = `${product.name}`
-        productImg.setAttribute('src', `images/${product.image}`)
-        productImg.setAttribute('loading', 'lazy')
-        productImg.setAttribute('alt', `${product.type}`)
-        productCardButton.textContent = `Buy`
+    const displayProductCards = (products) => {
 
-        //appending elements to its parent elements
+        products.forEach(product => {
+            //creating card elements 
+            const productCardsHTML = document.createElement('div')
+            productCardsHTML.classList.add('product-card')
+            const productCardTitle = document.createElement('h3')
+            const productImg = document.createElement('img')
+            const productCardButton = document.createElement('button')
 
-        productCards.appendChild(productCardsHTML)
-        productCardsHTML.appendChild(productCardTitle)
-        productCardsHTML.appendChild(productImg)
-        productCardsHTML.appendChild(productCardButton)
+            //adding content to the cards 
 
 
-    });
+            productCardTitle.textContent = `${product.name}`
+            productImg.setAttribute('src', `images/${product.image}`)
+            productImg.setAttribute('loading', 'lazy')
+            productImg.setAttribute('alt', `${product.type}`)
+            productCardButton.textContent = `Buy`
 
+            //appending elements to its parent elements
+
+            productCards.appendChild(productCardsHTML)
+            productCardsHTML.appendChild(productCardTitle)
+            productCardsHTML.appendChild(productImg)
+            productCardsHTML.appendChild(productCardButton)
+
+
+        });
+
+    }
+
+} catch (error) {
+    console.error("Sorry, something went wrong:", error.message);
 }

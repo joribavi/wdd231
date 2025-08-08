@@ -234,6 +234,10 @@ h3 {
     }
 }
 
+/*-----SECTIONS --------*/
+.section-title {
+    border: 25px 0;
+}
 
 /*-------COMPANY INFORMATION SECTION ------------*/
 .company-info {
@@ -241,6 +245,7 @@ h3 {
     flex-direction: column;
     gap: 20px;
     justify-content: center;
+    margin-bottom: 25px;
 
 
 
@@ -254,6 +259,87 @@ h3 {
     min-width: 300px;
     min-width: 200px;
 }
+
+dialog {
+    color: var(--blue-color);
+    border-radius: 5px;
+    background-color: whitesmoke;
+
+}
+
+dialog button {
+    height: 25px;
+    width: 25px;
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+    border-radius: 2px;
+}
+
+dialog p {
+    color: black;
+}
+
+/* -------PRODUCT CARDS ---------------*/
+.cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    border-top: 25px;
+}
+
+.product-card {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "photograph"
+        "button"
+    ;
+    width: 120px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-column-gap: 5px;
+
+
+}
+
+.product-card h3 {
+    grid-area: title;
+    font-size: 1rem;
+}
+
+.product-card img {
+    grid-area: photograph;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 5px;
+
+
+
+}
+
+.product-card button {
+    grid-area: button;
+    width: 100px;
+    font-weight: bold;
+    color: white;
+    background: var(--blue-color);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 5px;
+    margin: 0 auto;
+
+
+
+}
+
 
 
 /*------- FOOTER ----------------*/

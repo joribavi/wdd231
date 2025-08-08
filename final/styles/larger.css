@@ -1,78 +1,106 @@
-  @media only screen and (min-width: 38rem) {
-      .navigation ul {
+@media only screen and (min-width: 64rem) {
+    .navigation ul {
 
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-
-
-
-
-      }
-
-      header {
-
-          grid-template-columns: 150px auto 150px;
-      }
-
-      .hamburger {
-          display: none;
-      }
-
-      .navigation {
-          display: block;
-          border-bottom: 1px solid rgba(128, 128, 128, 0.719);
-
-
-      }
-
-      .navigation ul li a {
-          border: none;
-
-      }
-
-
-      /*----SLIDE  ----- */
-      .slideshow-container {
-          max-width: 97%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
 
 
 
 
-      }
+    }
 
-      .text {
-          padding: 20px;
-          font-size: larger;
+    header {
 
+        grid-template-columns: 150px auto 150px;
+    }
 
-      }
+    .hamburger {
+        display: none;
+    }
 
-      /*-----COMPANY INFO BOXES  -----*/
-
-      .company-info {
-          flex-direction: row;
-          margin-top: 20px;
-
-      }
-
-      .company-box {
-
-          margin: 0 auto;
-          padding: 20px;
-          cursor: pointer;
-
-      }
-
-      .company-box:hover {
-          transform: scale(1.08);
+    .navigation {
+        display: block;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.719);
 
 
+    }
 
-      }
+    .navigation ul li a {
+        border: none;
+
+    }
+
+
+    /*----SLIDE  ----- */
+    .slideshow-container {
+        max-width: 97%;
 
 
 
 
+    }
 
-  }
+    .text {
+        padding: 20px;
+        font-size: larger;
+
+
+    }
+
+    /*-----COMPANY INFO BOXES  -----*/
+
+    .company-info {
+        flex-direction: row;
+        margin-top: 20px;
+
+    }
+
+    .company-box {
+
+        margin: 0 auto;
+        padding: 20px;
+        cursor: pointer;
+
+    }
+
+    .company-box:hover {
+        transform: scale(1.08);
+
+
+
+    }
+
+    /*--------PRODUCT CARDS ---- -------*/
+
+    .cards-wrapper {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-content: space-around;
+        gap: 20px;
+        border-top: 25px;
+    }
+
+    .product-card {
+        grid-template-areas:
+            "title"
+            "photograph"
+            "button";
+        width: 240px;
+        height: 280px;
+        border-bottom: 20px;
+
+
+    }
+
+    .product-card button {
+        border-bottom: 10px;
+        margin: 0 auto;
+    }
+
+    .product-card img {
+        height: 150px;
+        width: 120px;
+        margin: 0 auto;
+    }
+
+}

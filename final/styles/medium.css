@@ -1,0 +1,27 @@
+@media only screen and (min-width: 38rem) {
+    .product-card {
+        display: grid;
+        grid-template-areas:
+            "photograph title"
+            "photograph button"
+        ;
+        width: 250px;
+        height: 200px;
+
+
+
+
+    }
+
+    .product-card img {
+
+
+        height: 110px;
+        margin: 10px;
+
+
+
+    }
+
+
+}

@@ -293,23 +293,38 @@ dialog p {
     display: grid;
     grid-template-areas:
         "title"
+        "category"
+        "sizes"
         "photograph"
         "button"
     ;
-    width: 120px;
-    height: 250px;
+    width: 140px;
+    height: 280px;
     justify-content: center;
     align-items: center;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    grid-column-gap: 5px;
+    grid-column-gap: 0.3rem;
 
 
+}
+
+.product-card h4 {
+    grid-area: category;
+    color: var(--pink-color);
+    text-transform: capitalize;
+    font-size: 1rem;
 }
 
 .product-card h3 {
     grid-area: title;
     font-size: 1rem;
+}
+
+.product-card span {
+    grid-area: sizes;
+    color: var(--blue-color);
+
 }
 
 .product-card img {
@@ -335,11 +350,22 @@ dialog p {
     cursor: pointer;
     border-bottom: 5px;
     margin: 0 auto;
+    border: none;
 
 
 
 }
 
+.product-card button:hover {
+    color: var(--violet-color);
+}
+
+/*- reducing space  betweetn elements inside of the grid- */
+.product-card>* {
+    margin: 0;
+    padding: 0.2rem;
+
+}
 
 
 /*------- FOOTER ----------------*/

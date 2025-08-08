@@ -113,22 +113,30 @@ try {
             const productCardTitle = document.createElement('h3')
             const productImg = document.createElement('img')
             const productCardButton = document.createElement('button')
+            const productInfo = document.createElement('span')
+            const productCategory = document.createElement('h4')
 
             //adding content to the cards 
 
 
             productCardTitle.textContent = `${product.name}`
+            productCategory.textContent = `${product.category}`
+            productInfo.textContent = `Sizes: ${product.sizes}`
             productImg.setAttribute('src', `images/${product.image}`)
             productImg.setAttribute('loading', 'lazy')
             productImg.setAttribute('alt', `${product.type}`)
             productCardButton.textContent = `Buy`
 
+
             //appending elements to its parent elements
 
             productCards.appendChild(productCardsHTML)
             productCardsHTML.appendChild(productCardTitle)
+            productCardsHTML.appendChild(productCategory)
+            productCardsHTML.appendChild(productInfo)
             productCardsHTML.appendChild(productImg)
             productCardsHTML.appendChild(productCardButton)
+
 
 
         });

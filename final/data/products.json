@@ -125,6 +125,16 @@
             "slug": "14",
             "type": "leggings",
             "there_is_stock": false
+        },
+        {
+          "category": "Casual Wear",
+            "name": "Classic Shirt",
+            "image": "classic-shirt.webp",
+            "sizes": "10-15",
+            "slug": "14",
+            "type": "shirt",
+            "there_is_stock": true
+        
         }
     ]
 }

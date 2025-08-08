@@ -83,10 +83,12 @@
     .product-card {
         grid-template-areas:
             "title"
+            "category"
+            "sizes"
             "photograph"
             "button";
         width: 240px;
-        height: 280px;
+        height: 290px;
         border-bottom: 20px;
 
 

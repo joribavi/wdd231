@@ -5,8 +5,8 @@
             "photograph title"
             "photograph button"
         ;
-        width: 250px;
-        height: 200px;
+        width: 240px;
+        height: 120px;
 
 
 
@@ -16,7 +16,7 @@
     .product-card img {
 
 
-        height: 110px;
+        height: 100px;
         margin: 10px;
 
 

@@ -9,9 +9,10 @@
     <meta name="description" content="All for your kids-Final Project for WDD231">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/scripts.js" defer></script>
+    <script type="module" src="scripts/scripts.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -39,7 +40,7 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="allforyour-kids.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li class="current"><a href="products.html">Products</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
@@ -71,23 +72,72 @@
             </div>
 
             <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
         </div>
         <br>
 
         <!-- The dots/circles -->
         <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
+        <section class="company-info">
+            <div class="company-box" id="box-1">
+                <h3>Why Choosing Us?</h3>
+
+            </div>
+            <div class="company-box" id="box-2">
+                <h3>How to Choose the Best for Your Children? </h3>
+
+            </div>
+            <div class="company-box" id="box-3">
+                <h3>Company Information</h3>
+
+            </div>
+            <dialog id="company-info-modal-1">
+                <button id="close-btn-1">X</button>
+                <h3>Why Choosing Us</h3>
+                <p>Fast Delivery and High-Quality Products</p>
+            </dialog>
+            <dialog id="company-info-modal-2">
+                <button id="close-btn-2">X</button>
+                <h3>How to Choose the Best for Your Children?</h3>
+                <p>All the pruducts have size specifications to avoid any confusion. Besides
+                    that you can rely on our assistance.
+                </p>
+            </dialog>
+            <dialog id="company-info-modal-3">
+                <button id="close-btn-3">X</button>
+                <h3>Company Information</h3>
+                <p>This is the place where you can find the best Brands</p>
+            </dialog>
+        </section>
+        <h2 class="section-title">Special Offers</h2>
+        <section class="cards-wrapper">
+
+        </section>
+        <h2 class="section-title">Payment Methods</h2>
+        <section class="payment-methods"> </section>
+        <h2 class="section-title">Our Brands</h2>
+        <section class="brands"> </section>
+
+
+
+
+
 
 
     </main>
     <footer>
         <h3>Follow us</h3>
-        <div class="social-links">
+        <div class=" social-links">
+            <a href="#" target="_blank"> <img src="images/facebook.svg" width="50px" height="50px"
+                    alt="facebook icon"></a>
+            <a href="#" target="_blank"> <img src="images/instagram.svg" width="50px" height="50px"
+                    alt="instagram icon"></a>
+            <a href="#" target="_blank"> <img src="images/x.svg" width="50px" height="50px" alt="X icon"></a>
 
         </div>
         <p>Copyrigth © <span id="currentyear"></span> Jonathan Villegas. Mendoza, Argentina</p>

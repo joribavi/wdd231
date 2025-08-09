@@ -1,4 +1,6 @@
 @media only screen and (min-width: 38rem) {
+
+    /*----PRODUCT SECTION ---*/
     .product-card {
         display: grid;
         grid-template-areas:
@@ -27,6 +29,7 @@
 
     }
 
+    /*----PAYMENT METHODS ---*/
 
     .payment-methods {
 
@@ -45,5 +48,18 @@
 
     }
 
+    /*--------FORM-------------*/
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    form {
+        justify-content: center;
+        align-items: center;
+    }
 
 }

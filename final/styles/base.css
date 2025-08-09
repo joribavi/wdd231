@@ -237,6 +237,7 @@ h3 {
 /*-----SECTIONS --------*/
 .section-title {
     border: 25px 0;
+    padding: 25px 0;
 }
 
 /*-------COMPANY INFORMATION SECTION ------------*/
@@ -367,6 +368,71 @@ dialog p {
 
 }
 
+/*-------PAYMENT METHODS -----------------*/
+
+.payment-methods,
+.brands {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px 0;
+}
+
+.payment-card {
+    width: 120px;
+    height: 150px;
+    box-shadow: 0 1px 4px 0 rgba(155, 15, 160, 0.267), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(255, 192, 203, 0.082);
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px;
+
+}
+
+.payment-card>* {
+    margin: 0;
+    padding: 0.2rem;
+}
+
+.payment-card img {
+    width: 70px;
+    height: 70px;
+
+}
+
+.payment-card h3 {
+    padding-top: 10px;
+
+}
+
+
+.brand-card {
+    width: 150px;
+    height: 170px;
+    box-shadow: 0 1px 4px 0 rgba(155, 15, 160, 0.267), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgba(255, 192, 203, 0.082);
+
+}
+
+.brand-card img {
+    width: 80px;
+    height: 90px;
+    object-fit: fill;
+}
+
+.brand-card h3 {
+    color: var(--blue-color);
+}
 
 /*------- FOOTER ----------------*/
 
@@ -375,4 +441,6 @@ footer {
     flex-direction: column;
     font-size: small;
     text-align: center;
+    background-color: rgba(255, 192, 203, 0.082);
+    padding: 35px 0;
 }

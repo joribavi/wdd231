@@ -64,7 +64,8 @@
 
     }
 
-    .company-box:hover {
+    .company-box:hover,
+    .brand-card:hover {
         transform: scale(1.08);
 
 

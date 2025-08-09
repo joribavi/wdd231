@@ -146,3 +146,64 @@ try {
 } catch (error) {
     console.error("Sorry, something went wrong:", error.message);
 }
+
+
+// FUNCTION TO DISPLAY PAYMENT METHODS  
+
+import { paymentMethods } from './payment.mjs'
+
+const paymentMethodCards = document.querySelector('.payment-methods')
+
+function displayPaymentMethods() {
+    paymentMethods.forEach(paymentMethod => {
+        const paymentCard = document.createElement('div')
+        paymentCard.classList.add('payment-card')
+        const paymentCardtitle = document.createElement('h3')
+        const paymentCardImg = document.createElement('img')
+
+        paymentCardtitle.textContent = `${paymentMethod.paymentTitle}`
+        paymentCardImg.setAttribute('src', `images/${paymentMethod.image}`)
+        paymentCardImg.setAttribute('loading', 'lazy')
+
+
+        paymentMethodCards.appendChild(paymentCard)
+        paymentCard.appendChild(paymentCardtitle)
+        paymentCard.appendChild(paymentCardImg)
+
+
+    }
+
+
+    );
+
+}
+
+displayPaymentMethods()
+
+
+//FUNCTION TO DISPLAY BRANDS THE COMPANY WORK WITH
+
+import { ourBrands } from './brands.mjs';
+
+const brandCards = document.querySelector('.brands')
+
+function displayBrandCards() {
+    ourBrands.forEach(ourBrand => {
+        const brandCard = document.createElement('div')
+        brandCard.classList.add('brand-card')
+        const brandCardTitle = document.createElement('h3')
+        const brandImg = document.createElement('img')
+
+        brandCardTitle.textContent = `${ourBrand.brandTitle}`
+        brandImg.setAttribute('src', `images/${ourBrand.image}`)
+        brandImg.setAttribute('loading', 'lazy')
+
+        brandCards.appendChild(brandCard)
+        brandCard.appendChild(brandCardTitle)
+        brandCard.appendChild(brandImg)
+
+
+    });
+}
+
+displayBrandCards()

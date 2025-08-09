@@ -1,4 +1,4 @@
-const paymentMethods =
+export const paymentMethods =
     [
         {
             paymentTitle: "Wire Transfer",
@@ -9,15 +9,15 @@ const paymentMethods =
             image: "card.webp"
         },
         {
-            PaymentTitle: "Paypal",
+            paymentTitle: "Paypal",
             image: "paypal.webp"
         },
         {
-            PaymentTitle: "Google Pay",
+            paymentTitle: "Google Pay",
             image: "googlepay.webp"
         },
         {
-            PaymentTitle: "Apple Pay",
+            paymentTitle: "Apple Pay",
             image: "applepay.webp"
         }
 
@@ -25,4 +25,3 @@ const paymentMethods =
 
 
 
-export default paymentMethods;

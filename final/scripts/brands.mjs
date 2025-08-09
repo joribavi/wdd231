@@ -1,4 +1,4 @@
-const brands =
+export const ourBrands =
     [
         {
             brandTitle: "Ositos",
@@ -24,5 +24,3 @@ const brands =
     ];
 
 
-
-export default brands;

@@ -28,4 +28,22 @@
     }
 
 
+    .payment-methods {
+
+        justify-content: space-around;
+
+    }
+
+    .payment-card {
+        width: 180px;
+        height: 200px;
+    }
+
+    .payment-card img {
+        width: 100px;
+        height: 100px;
+
+    }
+
+
 }

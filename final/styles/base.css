@@ -440,6 +440,13 @@ dialog p {
 .description {
     text-align: justify;
     font-size: 1.2rem;
+    margin: 0 25px;
+}
+
+.web-form {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+
 }
 
 form {
@@ -526,6 +533,13 @@ form {
         margin: 15px;
         cursor: pointer;
     }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-right: auto;
+    }
 }
 
 
@@ -546,4 +560,5 @@ footer {
     text-align: center;
     background-color: rgba(255, 192, 203, 0.082);
     padding: 35px 0;
+    margin-top: 25px;
 }

@@ -207,3 +207,20 @@ function displayBrandCards() {
 }
 
 displayBrandCards()
+
+//SEARCH PARAMS FOR THANKS FORM 
+
+const getString = window.location.search;
+//console.log(getString);
+const myInfo = new URLSearchParams(getString);
+console.log(myInfo);
+console.log(myInfo.get('first'));
+
+document.querySelector('#results').innerHTML = `<p><strong>Your Name:</strong> ${myInfo.get('first')} ${myInfo.get('last')} </p>
+
+<p><strong>Your Email Address:</strong>${myInfo.get('email')} </p>
+<p><strong>Your Phone Number:</strong> ${myInfo.get('phone')} </p>
+<p><strong>You ask about:</strong> ${myInfo.get('inquiry')} </p>
+<p><strong>Your Message:</strong> ${myInfo.get('message')} </p>
+`
+

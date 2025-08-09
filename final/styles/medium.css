@@ -49,17 +49,33 @@
     }
 
     /*--------FORM-------------*/
-
-    .form-group {
-        display: flex;
-        flex-direction: column;
-
+    .description {
+        padding-bottom: 30px;
     }
 
+    .web-form {
+        margin: 0 auto;
+    }
 
     form {
-        justify-content: center;
-        align-items: center;
+        width: 500px;
+
+        input[type=text],
+        input[type=tel],
+        input[type=date],
+        input[type=email],
+        select {
+            width: 450px;
+        }
+
+        textarea[name=message] {
+
+            width: 450px;
+
+        }
+
+
+
     }
 
 }

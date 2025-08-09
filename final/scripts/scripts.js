@@ -1,3 +1,5 @@
+
+
 // Footer Current Year and Last Modified
 const currentyear = document.querySelector("#currentyear");
 
@@ -208,19 +210,16 @@ function displayBrandCards() {
 
 displayBrandCards()
 
+
 //SEARCH PARAMS FOR THANKS FORM 
+import { messageInfo } from './searchparams.mjs';
 
-const getString = window.location.search;
-//console.log(getString);
-const myInfo = new URLSearchParams(getString);
-console.log(myInfo);
-console.log(myInfo.get('first'));
 
-document.querySelector('#results').innerHTML = `<p><strong>Your Name:</strong> ${myInfo.get('first')} ${myInfo.get('last')} </p>
 
-<p><strong>Your Email Address:</strong>${myInfo.get('email')} </p>
-<p><strong>Your Phone Number:</strong> ${myInfo.get('phone')} </p>
-<p><strong>You ask about:</strong> ${myInfo.get('inquiry')} </p>
-<p><strong>Your Message:</strong> ${myInfo.get('message')} </p>
+document.querySelector('#results').innerHTML = `<p><strong>Your Name:</strong> ${messageInfo.get('first')} ${messageInfo.get('last')} </p>
+
+<p><strong>Your Email Address:</strong>${messageInfo.get('email')} </p>
+<p><strong>Your Phone Number:</strong> ${messageInfo.get('phone')} </p>
+<p><strong>You ask about:</strong> ${messageInfo.get('inquiry')} </p>
+<p><strong>Your Message:</strong> ${messageInfo.get('message')} </p>
 `
-
